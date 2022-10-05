@@ -37,7 +37,7 @@ Online
 -----
 ### **Education**
 -----
->Yangzhou University 
+>**Yangzhou University** 
 
  >> Major: Software Engineering
 
