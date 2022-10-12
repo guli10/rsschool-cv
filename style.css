@@ -1,0 +1,204 @@
+body{
+    background-color: #999;
+}
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+h4{
+    color: #30475E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    padding: 7px;
+    background: #30475E;
+    color: #E8E8E8;
+    width: 200px;
+    border-radius: 80px;
+}
+
+.center-container{
+    margin: 30px auto;
+    width: 1024px;
+    line-height: 1.5;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.first{
+    padding: 10px;
+    width: 50%;
+    float: left;
+    background-color: #E8E8E8;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+
+.second{
+    float: right;
+    width: 45%;
+   padding: 10px;
+    background-color: #ffffff;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+.third{
+   
+    z-index: 1;
+    position: absolute;
+ 
+}
+.content, .overlay {
+    grid-area: 1 / 1;
+  }
+header{
+    background-color: #30475E;
+    display: flex;
+    justify-content: center;
+    color: white; 
+    border-bottom: 5mm ridge #F05454 ;
+}
+h1{
+    padding-top: 40px;
+}
+#profile-img{
+    margin: 35px 30px 60px;
+    width: 150px;
+    border: 5px solid white;
+    outline: 10px solid #F05454;
+    border-radius: 200px;
+}
+/*profile section*/
+.profile p{
+    padding: 10px 20px;
+}
+
+/*contact section*/
+.contact ul{ 
+    list-style: none;
+}
+.contact li{
+   display: flex;
+   padding: 0px;
+   margin-bottom: 2px; 
+}
+ .contact p{
+   padding-left: 5px;  
+}
+.contact img{
+  padding-top: 20px;
+}
+
+/*skills section*/
+.skills ul{
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+   
+    font-family: 'Roboto', sans-serif;
+    margin:0 30px;
+}
+.skill {
+    margin-bottom: 30px;
+    position: relative;
+    overflow-x:hidden;
+}
+ 
+.skill > p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1716;
+    margin: 0;
+}
+ 
+.skill:before {
+    width: 100%;
+    height: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    background:  #f19292;
+    bottom: 0;
+}
+ 
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: #F05454;
+    display: block;
+    position: relative;
+}
+ 
+.skill-bar span {
+    position: absolute;
+    border-top: 5px solid  #F05454;
+    top: -30px;
+    padding: 0;
+    font-size: 18px;
+    padding: 3px 0;
+    font-weight: 500;
+}
+ 
+.skill-bar {
+    position: relative;
+}
+ 
+.skill1 .skill-count1 {
+    right: 0;
+}
+ 
+.skill1 {
+    width: 95%;
+}
+ 
+.skill2 {
+    width: 85%;
+}
+ 
+.skill2 .skill-count2 {
+    right: 0;
+}
+ 
+.skill3{
+   width: 75%;
+}
+ 
+.skill3 .skill-count3 {
+    right: 0;
+}
+/*Education section*/
+.education p, h4{
+    padding: 0px 10px;
+}
+/*courses section*/
+ pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    margin-top: 0;
+  }
+  .courses li{
+    margin: 4px;
+
+  }
+
+  
+
+
+
+
+
+
+
+
+
+/*#main{
+    background: blue;
+    display: flex;
+    justify-content: center;
+
+}
+
+.progress-bar{
+    width: 100px;
+}
