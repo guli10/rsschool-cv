@@ -1,15 +1,23 @@
-body{
+body {
     background-color: #999;
 }
-h1, h2, h3{
+
+h1 {
+    padding-top: 40px;
+}
+
+h1,
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
 }
-h4{
+
+h4 {
     color: #30475E;
     font-family: 'Montserrat', sans-serif;
 }
 
-h3{
+h3 {
     padding: 7px;
     background: #30475E;
     color: #E8E8E8;
@@ -17,14 +25,33 @@ h3{
     border-radius: 80px;
 }
 
-.center-container{
+/*Header*/
+header {
+    background-color: #30475E;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-bottom: 5mm ridge #F05454;
+}
+
+#profile-img {
+    margin: 35px 30px 60px;
+    width: 150px;
+    border: 5px solid white;
+    outline: 10px solid #F05454;
+    border-radius: 200px;
+}
+
+/*Containers*/
+.center-container {
     margin: 30px auto;
     width: 1024px;
     line-height: 1.5;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
 }
-.first{
+
+.first {
     padding: 10px;
     width: 50%;
     float: left;
@@ -33,94 +60,84 @@ h3{
     margin-bottom: -100%;
 }
 
-.second{
+.second {
     float: right;
     width: 45%;
-   padding: 10px;
+    padding: 10px;
+    padding-bottom: 0;
     background-color: #ffffff;
     padding-bottom: 100%;
     margin-bottom: -100%;
 }
-.third{
-   
+
+.third {
+    padding-top: 5px;
     z-index: 1;
-    position: absolute;
- 
+    position: relative;
+    clear: both;
+    display: block;
+    background-color: #eee;
+    overflow: hidden;
 }
-.content, .overlay {
-    grid-area: 1 / 1;
-  }
-header{
-    background-color: #30475E;
-    display: flex;
-    justify-content: center;
-    color: white; 
-    border-bottom: 5mm ridge #F05454 ;
-}
-h1{
-    padding-top: 40px;
-}
-#profile-img{
-    margin: 35px 30px 60px;
-    width: 150px;
-    border: 5px solid white;
-    outline: 10px solid #F05454;
-    border-radius: 200px;
-}
-/*profile section*/
-.profile p{
+
+/*Profile Section*/
+.profile p {
     padding: 10px 20px;
 }
 
-/*contact section*/
-.contact ul{ 
+/*Contact Section*/
+.contact ul {
     list-style: none;
 }
-.contact li{
-   display: flex;
-   padding: 0px;
-   margin-bottom: 2px; 
-}
- .contact p{
-   padding-left: 5px;  
-}
-.contact img{
-  padding-top: 20px;
+
+.contact li {
+    display: flex;
+    padding: 0px;
+    margin-bottom: 2px;
 }
 
-/*skills section*/
-.skills ul{
+.contact p {
+    padding-left: 5px;
+}
+
+.contact img {
+    padding-top: 20px;
+}
+
+/*Skills Section*/
+.skills ul {
     padding: 0;
     margin: 0;
 }
+
 .wrapper {
-   
     font-family: 'Roboto', sans-serif;
-    margin:0 30px;
+    margin: 0 30px;
 }
+
 .skill {
     margin-bottom: 30px;
     position: relative;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
- 
-.skill > p {
+
+.skill>p {
     font-size: 18px;
     font-weight: 700;
     color: #1a1716;
     margin: 0;
 }
- 
+
 .skill:before {
     width: 100%;
     height: 10px;
     content: "";
     display: block;
     position: absolute;
-    background:  #f19292;
+    background: #f19292;
     bottom: 0;
 }
- 
+
 .skill-bar {
     width: 100%;
     height: 10px;
@@ -128,77 +145,95 @@ h1{
     display: block;
     position: relative;
 }
- 
+
 .skill-bar span {
     position: absolute;
-    border-top: 5px solid  #F05454;
+    border-top: 5px solid #F05454;
     top: -30px;
     padding: 0;
     font-size: 18px;
     padding: 3px 0;
     font-weight: 500;
 }
- 
+
 .skill-bar {
     position: relative;
 }
- 
+
 .skill1 .skill-count1 {
     right: 0;
 }
- 
+
 .skill1 {
     width: 95%;
 }
- 
+
 .skill2 {
     width: 85%;
 }
- 
+
 .skill2 .skill-count2 {
     right: 0;
 }
- 
-.skill3{
-   width: 75%;
+
+.skill3 {
+    width: 55%;
 }
- 
+
 .skill3 .skill-count3 {
     right: 0;
 }
+
 /*Education section*/
-.education p, h4{
+.education p,
+h4 {
     padding: 0px 10px;
 }
-/*courses section*/
- pre code {
+
+/*Courses section*/
+pre code {
     background-color: #eee;
     border: 1px solid #999;
     display: block;
     margin-top: 0;
-  }
-  .courses li{
+}
+
+.courses li {
     margin: 4px;
-
-  }
-
-  
-
-
-
-
-
-
-
-
-
-/*#main{
-    background: blue;
-    display: flex;
-    justify-content: center;
 
 }
 
-.progress-bar{
-    width: 100px;
+.courses a {
+    color: #30475E;
+}
+
+/*Languages Section*/
+.languages li {
+    display: table-cell;
+
+    padding: 10px 20px;
+    text-align: center;
+    margin: auto;
+    margin-left: 30px;
+}
+
+.languages h3 {
+    margin-left: 10px;
+}
+
+/*Footer*/
+footer {
+    color: #E8E8E8;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    background-color: #30475E;
+    border-bottom: 2mm ridge #F05454;
+}
+
+footer a {
+    color: #E8E8E8;
+    padding-top: 15px;
+    text-decoration: none;
 }
